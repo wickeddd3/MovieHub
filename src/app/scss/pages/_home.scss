@@ -1,0 +1,30 @@
+.section {
+    margin: 2rem 3rem;
+    padding: 0;
+
+    @include respond(tab-land) {
+        margin: 2rem 2rem;
+    }
+
+    @include respond(tab-port) {
+        margin: 2rem 1rem;
+    }
+
+    @include respond(tab-phone) {
+        margin: 2rem 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        max-height: 40rem;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding: 1rem;
+
+        @include respond(tab-land) {
+            padding: 1rem 0;
+        }
+    
+    }
+}

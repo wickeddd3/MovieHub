@@ -1,0 +1,67 @@
+.btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &--loadmore {
+        width: 100%;
+        display: block;
+        padding: 2rem;
+        background-color: $color-secondary-light;
+        color: $color-white;
+        box-shadow: 0 0 5px 1px lightgrey;
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+    }
+
+    &--trailer {
+        text-decoration: none;
+        background-color: $color-secondary-light;
+        color: $color-white;
+        font-family: $heading-font-family;
+        font-weight: 800;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        letter-spacing: .2rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30rem;
+
+        @include respond(tab-land) {
+            width: 27rem;
+        }
+
+        @include respond(tab-port) {
+            width: 25rem;
+            font-size: 1.7rem;
+            padding: .9rem 2.2rem;
+        }
+
+        @include respond(phone) {
+            width: 23rem;
+            font-size: 1.5rem;
+            padding: .8rem 2rem;
+        }
+
+        &__icon {
+            height: 3rem;
+            width: 3rem;
+            fill: $color-white;
+        }
+    }
+
+    &--search {
+        width: 100%;
+        border-radius: 3rem;
+        background-color: $color-secondary-light;
+        color: $color-white;
+    }
+}

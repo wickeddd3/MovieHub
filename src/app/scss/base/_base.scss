@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    line-height: 1.5;
+
+    @include respond(tab-land) {
+      line-height: 1.2;
+    }
+}
+
+body {
+    font-size: 1.5rem;
+    position: relative;
+}

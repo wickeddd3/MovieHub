@@ -1,0 +1,7 @@
+.season {
+    margin: 2rem 3rem;
+
+    @include respond(tab-port) {
+        margin: 2rem;
+    }
+}

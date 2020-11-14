@@ -1,0 +1,27 @@
+.list-group {
+    list-style-type: none;
+    border: 1px solid $color-primary-light;
+    border-radius: 5px;
+
+    &__item {
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        &__link {
+            text-decoration: none;
+            font-family: inherit;
+            font-size: 1.6rem;
+            color: inherit;
+        }
+
+        &--active {
+            font-weight: 700;
+            background-color: $color-primary-light;
+            width: 100%;
+        }
+        
+    }
+}
