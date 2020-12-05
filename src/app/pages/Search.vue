@@ -52,7 +52,6 @@
                         <template v-else>
                             <p class="paragraph">{{ no_result }}</p>
                         </template>
-
                         <div class="pagination" v-if="filteredResult.length > 0">
                             <button class="pagination__previous btn" @click="previous">Previous</button>
                             <span class="pagination__page">{{ page }} of {{ total_pages }}</span>
@@ -63,9 +62,7 @@
             </div>
         </div>
     </div>
-
     <Footer />
-
 </div>
 </template>
 

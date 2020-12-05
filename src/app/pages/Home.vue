@@ -1,6 +1,5 @@
 <template>
 <div class="container--fluid">
-
     <div class="header">
         <h1 class="heading-title--main text-white">Welcome to MovieHub</h1>
         <h1 class="heading-title--sub text-white">Explore millions of movies and tv shows</h1>
@@ -12,15 +11,12 @@
             <button type="submit" class="header__search-button">Search</button>
         </form>
     </div>
-
     <div class="main">
         <MovieSection :type="'movie'" :movies="popular_movies" :title="popular_movies_title" v-if="popular_movies.length > 0" />
         <MovieSection :type="'movie'" :movies="top_rated_movies" :title="top_rated_movies_title" v-if="top_rated_movies.length > 0" />
         <MovieSection :type="'movie'" :movies="upcoming_movies" :title="upcoming_movies_title" v-if="upcoming_movies.length > 0" />
     </div>
-
     <Footer/>
-
 </div>
 </template>
 

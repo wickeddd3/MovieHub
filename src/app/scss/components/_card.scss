@@ -15,6 +15,11 @@
         &-icon {
             height: 2rem;
             width: 2rem;
+            cursor: pointer;
+        }
+
+        &--collapse {
+            border: none;
         }
     }
 
@@ -33,6 +38,10 @@
                 margin-bottom: 1rem;
                 display: block;
             }
+        }
+
+        &--collapse {
+            display: none;
         }
     }
 }

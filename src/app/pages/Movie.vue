@@ -10,7 +10,6 @@
             :srcset="`//image.tmdb.org/t/p/w533_and_h300_bestv2/${movie.backdrop_path} 1x, 
             //image.tmdb.org/t/p/w1066_and_h600_bestv2/${movie.backdrop_path} 2x`" 
             data-loaded="true">
-
         <div class="movie__poster">
             <img class="movie__poster--poster" 
                 :src="`//image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`" 
@@ -22,7 +21,6 @@
                 //image.tmdb.org/t/p/w600_and_h900_bestv2/${movie.poster_path} 2x`" 
                 data-loaded="true">
         </div>
-
         <div class="movie__content">
             <div class="movie__content-item">
                 <h1 class="heading-title--sub text-white">
@@ -84,10 +82,8 @@
             </div>
         </div>
     </div>
-
     <MovieSection :type="'movie'" :movies="recommended_movies" :title="recommended_movies_title" v-if="recommended_movies.length > 0"/>
     <MovieSection :type="'movie'" :movies="similar_movies" :title="similar_movies_title" v-if="similar_movies.length > 0"/>
-        
     <Footer/>
 </div>
 </template>
